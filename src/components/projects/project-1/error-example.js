@@ -19,7 +19,7 @@ export default function RandomTitle() {
 
     return (
         <div className="container">
-                <h1>{ title }</h1>
+                <h1>{ title  }</h1>
 
                 <button 
                     onClick={toogleRandom}      className="change-title"
