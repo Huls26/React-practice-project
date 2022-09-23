@@ -153,3 +153,12 @@
 .other-price-offer span {
     color: rgb(0, 110, 180);
 } */
+
+/* to center child element */
+.container--app {
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

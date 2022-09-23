@@ -1,0 +1,47 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+
+    width: 300px;
+    text-align: center;
+}
+
+.person--container {
+    margin-bottom: 2em;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.remove--btn {
+    color: dodgerblue;
+    letter-spacing: 1px;
+
+    background-color: transparent;
+    border: none;
+}
+
+.remove--btn:hover {
+    color: red;
+}
+
+.clear-items {
+    font-size: 1.3em;
+    color: aliceblue;
+
+    padding: .2em .7em;
+
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 5px;
+}
+
+.clear-items:hover {
+    color: rgb(255, 47, 0);
+}
+
+.clear-items:active {
+    color: rgb(100, 0, 0);
+}
