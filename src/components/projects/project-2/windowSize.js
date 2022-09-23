@@ -5,19 +5,21 @@ export default function WindowSize() {
     let [size, setSize] = useState(() => window.innerWidth);
     let [hideShow, setHideShow] = useState(() => true);
 
+    console.log(size)
     useEffect(() => {
-        window.addEventListener("resize", resize);
-
+        if (hideShow) {
+            window.addEventListener("resize", resize);
+        }
+  
         return () => {
             window.removeEventListener("resize", resize);
         }
-    }, [])
+    }, [hideShow])
 
     // event
     function resize() {
         setSize(() => window.innerWidth);
     }
-
     
     function toggleHideShow() {
         setHideShow(prevValue => !prevValue);
