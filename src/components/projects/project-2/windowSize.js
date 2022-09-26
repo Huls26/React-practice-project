@@ -5,7 +5,6 @@ export default function WindowSize() {
     let [size, setSize] = useState(() => window.innerWidth);
     let [hideShow, setHideShow] = useState(() => true);
 
-    console.log(size)
     useEffect(() => {
         if (hideShow) {
             window.addEventListener("resize", resize);
