@@ -1,5 +1,5 @@
 // import Book from "./projects/Book";
-import Setup from "./projects/project-2/fetchData";
+import Setup from "./projects/project-3/checkError";
 
 export default function App() {
     return (
