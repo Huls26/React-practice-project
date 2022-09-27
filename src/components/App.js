@@ -1,5 +1,5 @@
 // import Book from "./projects/Book";
-import Setup from "./projects/project-3/checkError";
+import Setup from "./projects/project-3/show/showHide";
 
 export default function App() {
     return (
