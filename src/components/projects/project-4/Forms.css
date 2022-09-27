@@ -5,11 +5,21 @@
     flex-direction: column;
     align-items: center;
     gap: 1.1em;
+    
+    padding: 1em;
+    margin-bottom: 1em;
+
+    border-radius: 6px;
+    background-color: rgb(240, 245, 249);
 }
 
 .form-addperson input {
+    background-color: rgb(214, 255, 241);
+    
     border: none;
+    border-radius: 6px;
     outline-color: darkorchid;
+
     margin-left: 2em;
     padding: .3em .6em;
 }
@@ -24,4 +34,27 @@
 
 .add-person:hover {
     color: aqua;
+}
+
+.list-container {
+    border-radius: 6px;
+    background-color: rgb(188, 253, 231);
+    padding: .5em;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-bottom: .5em;
+}
+
+.info-email {
+    color: rgb(116, 114, 114);
+}
+
+.info:last-child {
+    margin-bottom: 0;
 }
