@@ -22,9 +22,7 @@ export default function ShowHide() {
         setIsShow(prevValue => !prevValue);
     }
 
-    console.log(size)
     useEffect(() => {
-        console.log(isShow)
         if (isShow) {
             window.addEventListener("resize", screenSize);
         };
