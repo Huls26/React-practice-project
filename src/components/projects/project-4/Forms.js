@@ -7,8 +7,8 @@ export default function Form() {
                                     email: "",
                                 }));
     let [list, setList] = useState(() => ([]));
-
     let listElement = list.map(person => <List key={person.name} name={person.name} email={person.email} />)
+
     // event
     function updateForm(event) {
         let name = event.currentTarget.name;
@@ -22,7 +22,9 @@ export default function Form() {
 
     function handleSubmit(e) {
         e.preventDefault()
-        setList(prevList => ([...prevList, form]));
+        if (form.name && form.email) {
+            setList(prevList => ([...prevList, form]));
+        }
     }
 
     return (
