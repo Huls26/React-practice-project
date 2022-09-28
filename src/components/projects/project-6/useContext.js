@@ -13,10 +13,10 @@ export default function ContextApi() {
     }
 
     return (
-        <PersonContext.Provider value={ deleteItem }>
+        <PersonContext.Provider value={ {deleteItem, persons} }>
             <div className="container-api">
                 <h1 className="title">Prop Drilling</h1>
-                <List data={ persons } />
+                <List />
             </div>
         </PersonContext.Provider>
     )
