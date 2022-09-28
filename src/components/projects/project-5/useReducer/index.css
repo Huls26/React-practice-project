@@ -1,0 +1,43 @@
+.container-index {
+    text-align: center;
+
+}
+
+.container-index > * {
+    margin-bottom: 1em;
+}
+
+.container-index > *:last-child {
+    margin-bottom: 0em;
+}
+
+.add-item {
+    background-color: black;
+    color: #fff;
+
+    border-radius: 5px;
+
+    margin-left: .5em;
+    padding-inline: .4em;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: .5em;
+}
+
+.person:last-child {
+    margin-bottom: 0em;
+}
+
+.delete {
+    color: red;
+
+    padding-inline: .2em;
+}
+
+.delete:hover {
+    color: rgb(140, 0, 0);
+}

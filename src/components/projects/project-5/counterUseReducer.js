@@ -13,7 +13,7 @@ export default function Counter() {
             case 'decrement':
               return {count: state.count - 1};
             case 'reset':
-                return initialCount;        
+                return initialCount;   
             default:
               throw new Error();
           }
@@ -21,6 +21,7 @@ export default function Counter() {
 
     let [state, dispatch] = useReducer(reducer, initialCount);
 
+    console.log(state)
     return (
         <div className="counter-container">
             <button className="reset" onClick={() => dispatch({type: "reset"})}>reset</button>
