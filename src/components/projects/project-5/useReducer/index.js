@@ -30,7 +30,6 @@ export default function Index() {
         }
     }
 
-    console.log(state)
     // handle event
     function deleteElement(id) {
         let element = state.dataName.filter(person => person !== id);

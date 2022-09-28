@@ -1,0 +1,34 @@
+.container-api {
+    width: 80%;
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    margin-bottom: 1em;
+}
+
+.list {
+    max-width: 500px;
+    margin-inline: auto;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: .5em;
+}
+
+.delete--element {
+    letter-spacing: 1px;
+    color: rgb(69, 121, 211);
+
+    border: none;
+    background-color: transparent;
+}
+
+.delete--element:hover {
+    color: brown;
+}
